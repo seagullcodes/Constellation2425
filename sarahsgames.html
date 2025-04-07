@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Interactive World Map with Zoom Limit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <style>
+    #map { height: 100vh; }
+    .star-marker {
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script>
+    // Initialize the map with a default view
+    const map = L.map('map', {
+      minZoom: 2,  // Prevent zooming out too far
+      maxBoundsViscosity: 1.0  // Ensures the map bounces back when panned outside bounds
+    }).setView([20, 0], 2);
+
+    // Define the world bounds (adjusted to avoid showing empty areas near the poles)
+    const worldBounds = L.latLngBounds([-85, -180], [85, 180]);
+    map.setMaxBounds(worldBounds);
+
+    // Add the tile layer with noWrap set to true so that only one copy of the world is shown
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© OpenStreetMap contributors',
+      noWrap: true
+    }).addTo(map);
+
+    // Star data with location, description, optional image, and custom color
+    const stars = [
+      {
+        lat: 40.7128,
+        lng: -74.0060,
+        desc: "New York City",
+        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/New_york_times_square-terabass.jpg/320px-New_york_times_square-terabass.jpg",
+        color: "gold"
+      },
+      {
+        lat: 34.0522,
+        lng: -118.2437,
+        desc: "Los Angeles",
+        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Los_Angeles_Skyline_Mountains2.jpg/320px-Los_Angeles_Skyline_Mountains2.jpg",
+        color: "orange"
+      },
+      {
+        lat: 51.5074,
+        lng: -0.1278,
+        desc: "London",
+        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/London_Montage_L.jpg/320px-London_Montage_L.jpg",
+        color: "lightblue"
+      }
+    ];
+
+    const starMarkers = [];
+
+    // Create markers with custom colored stars
+    stars.forEach(star => {
+      const encodedSVG = encodeURIComponent(`
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <polygon points="12,2 15,10 24,10 17,15 20,23 12,18 4,23 7,15 0,10 9,10"
+            fill="${star.color}" stroke="black" stroke-width="1"/>
+        </svg>`);
+
+      const icon = L.divIcon({
+        className: 'star-marker',
+        iconSize: [24, 24],
+        html: `<div style="background-image: url('data:image/svg+xml;utf8,${encodedSVG}'); width:24px; height:24px;"></div>`
+      });
+
+      const popupContent = `
+        <div style="width:220px">
+          <h4>${star.desc}</h4>
+          ${star.img ? `<img src="${star.img}" style="width:100%; border-radius:8px;" />` : ''}
+          <p>This is ${star.desc}.</p>
+        </div>
+      `;
+
+      const marker = L.marker([star.lat, star.lng], { icon }).addTo(map);
+      marker.bindPopup(popupContent);
+      starMarkers.push(marker);
+    });
+
+    // Draw a line between the first two stars and make it clickable
+    if (stars.length >= 2) {
+      const latlngs = [
+        [stars[0].lat, stars[0].lng],
+        [stars[1].lat, stars[1].lng]
+      ];
+
+      const polyline = L.polyline(latlngs, {
+        color: 'red',
+        weight: 3
+      }).addTo(map);
+
+      polyline.on('click', function(e) {
+        L.popup()
+          .setLatLng(e.latlng)
+          .setContent("<div style='width:180px'><strong>Connection</strong><br>This line connects New York City and Los Angeles.</div>")
+          .openOn(map);
+      });
+    }
+  </script>
+</body>
+</html>
