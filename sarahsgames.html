@@ -913,23 +913,41 @@
      * Adding Stars to the Map
      ***************************************/
     // Loop through each star in the stars array, create a marker and bind a popup.
-    stars.forEach(star => {
-      const lat = star.coordinates?.lat;
-      const lng = star.coordinates?.lng;
+    let offsetIndex = 0;
+const offsetStep = 2; // how much to shift each duplicate
 
-      if (lat != null && lng != null) {
-        const marker = L.marker([lat, lng], { icon: createStarIcon(star.color) }).addTo(map);
+const coordCount = {};
 
-        const popupContent = `
-          <strong>${star.title}</strong><br/>
-          ${star.description}
-        `;
+stars.forEach(star => {
+  const lat = star.coordinates?.lat;
+  const lng = star.coordinates?.lng;
 
-        marker.bindPopup(popupContent);
-      } else {
-        console.warn("Skipping star with invalid coordinates:", star);
-      }
-    });
+  if (lat != null && lng != null) {
+    const key = `${lat},${lng}`;
+
+    // Track how many times this location has been used
+    if (!coordCount[key]) coordCount[key] = 0;
+    const offset = coordCount[key] * offsetStep;
+    coordCount[key]++;
+
+    const shiftedLat = lat - offset;
+    const shiftedLng = lng - offset;
+
+    const marker = L.marker([shiftedLat, shiftedLng], {
+      icon: createStarIcon(star.color)
+    }).addTo(map);
+
+    const popupContent = `
+      <strong>${star.title}</strong><br/>
+      ${star.description}
+    `;
+
+    marker.bindPopup(popupContent);
+  } else {
+    console.warn("Skipping star with invalid coordinates:", star);
+  }
+});
+
 
 
 
