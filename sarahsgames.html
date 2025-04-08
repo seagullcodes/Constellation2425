@@ -66,12 +66,17 @@
     const c  = "#d94234ff";
     const m = "#f0a202ff";
     const stars = [
-      {
-        title: "PF Roboctopi",
-        description: "Escondido, USA",
-        color: it,
-        coordinates: { lat: 33.1192, lng: -117.0864 }
+    {
+    
+       
+      title: "#1 | Portfolio Feedback Roboctopi",
+      description: "Escondido, USA<br><i>April 23, 2024</i>",
+      takeaway: "We focused on providing feedback to refine their portfolios visual branding and consistency, which has inspired us to enhance our own documentation and presentation. Their clean CAD model displays showed us the value of precision and consistency in design. We were inspired by their management of so many FLL teams, which highlighted the importance of strong organization and planning.",
+      color: it,
+      coordinates: { lat: 33.1192, lng: -117.0864 }
       },
+
+
       {
         title: "PF Fulminata",
         description: "Seguin, USA",
@@ -826,11 +831,12 @@
       eventsAtLocation.forEach(event => {
         popupContent += `
           <div style="border-bottom:1px solid #ccc; margin-bottom:4px;">
-            <strong>${event.title}</strong><br/>
-            ${event.description}
+            <strong style="color: #861f18;">${event.title}</strong><br/>
+            <span style="color: #f0a202;">${event.description}</span>
+            <br/>${event.takeaway}
           </div>
         `;
-      });
+      })
       popupContent += `<button onclick="map.closePopup()">Close</button>`;
       popupContent += `</div>`;
 
