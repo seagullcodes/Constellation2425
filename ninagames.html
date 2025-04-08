@@ -1,35 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Dark Blue Ocean, Light Blue Countries with Dark Borders</title>
+    <meta charset="UTF-8">
+    <title>MapLibre - Dark Ocean with Countries</title>
     <link href="https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.css" rel="stylesheet" />
+    <link rel="stylesheet" href = "style.css">
     <script src="https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.js"></script>
     <style>
-    html, body {
-      height: 100%;
-      margin: 0;
-    }
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
         #map {
-         height: 100%;
-      margin: 0;
+            height: 100%;
+            width: 100%;
         }
     </style>
 </head>
 <body>
     <div id="map"></div>
+
     <script>
-        var map = new maplibregl.Map({
+        const map = new maplibregl.Map({
             container: 'map',
             style: {
                 version: 8,
+                name: 'Dark Ocean Style',
                 sources: {},
                 layers: [
                     {
                         id: 'background',
                         type: 'background',
                         paint: {
-                            'background-color': '#001f3f' // super dark ocean
+                            'background-color': '#001f3f' // dark blue ocean
                         }
                     }
                 ]
@@ -38,7 +41,7 @@
             zoom: 1
         });
 
-        map.on('load', function () {
+        map.on('load', () => {
             map.addSource('countries', {
                 type: 'geojson',
                 data: 'https://raw.githubusercontent.com/johan/world.geo.json/master/countries.geo.json'
@@ -49,25 +52,27 @@
                 type: 'fill',
                 source: 'countries',
                 paint: {
-                    'fill-color': '#32475c',
+                    'fill-color': '#32475c', // lightish blue for countries
                     'fill-opacity': 0.7
                 }
             });
 
-            // Add dark borders
             map.addLayer({
                 id: 'countries-borders',
                 type: 'line',
                 source: 'countries',
                 paint: {
-                    'line-color': '#001428', // super dark blue/black
+                    'line-color': '#001428', // darker border
                     'line-width': 1
                 }
             });
         });
     </script>
+
+    <script src="ninaStars.js"></script>
 </body>
 </html>
+
 
 
 

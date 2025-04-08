@@ -1,0 +1,60 @@
+/* Full-screen layout */
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* Map container */
+#map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* Star canvas overlay */
+#star-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Star marker base style (for any interactive elements you want to add later) */
+.star-marker {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* Optionally: if you add any glow/sparkle lines later */
+.sparkle-line {
+  stroke: #ffffff;
+  stroke-width: 2;
+  filter: drop-shadow(0 0 6px white);
+  animation: sparkle 1s infinite;
+}
+
+/* Sparkle animation keyframes */
+@keyframes sparkle {
+  0% {
+    stroke-opacity: 0.6;
+    stroke-width: 1;
+  }
+  50% {
+    stroke-opacity: 1;
+    stroke-width: 2;
+  }
+  100% {
+    stroke-opacity: 0.6;
+    stroke-width: 1;
+  }
+}
