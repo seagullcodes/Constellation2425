@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Dark Blue Ocean, Light Blue Countries with Dark Borders</title>
+    <link href="https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.css" rel="stylesheet" />
+    <script src="https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.js"></script>
+    <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+        #map {
+         height: 100%;
+      margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script>
+        var map = new maplibregl.Map({
+            container: 'map',
+            style: {
+                version: 8,
+                sources: {},
+                layers: [
+                    {
+                        id: 'background',
+                        type: 'background',
+                        paint: {
+                            'background-color': '#001f3f' // super dark ocean
+                        }
+                    }
+                ]
+            },
+            center: [0, 0],
+            zoom: 1
+        });
+
+        map.on('load', function () {
+            map.addSource('countries', {
+                type: 'geojson',
+                data: 'https://raw.githubusercontent.com/johan/world.geo.json/master/countries.geo.json'
+            });
+
+            map.addLayer({
+                id: 'countries-fill',
+                type: 'fill',
+                source: 'countries',
+                paint: {
+                    'fill-color': '#32475c',
+                    'fill-opacity': 0.7
+                }
+            });
+
+            // Add dark borders
+            map.addLayer({
+                id: 'countries-borders',
+                type: 'line',
+                source: 'countries',
+                paint: {
+                    'line-color': '#001428', // super dark blue/black
+                    'line-width': 1
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+

@@ -8,7 +8,10 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <style>
     /* Make the map fill the screen */
-    #map { height: 100vh; }
+    #map { height: 100vh;
+        margin: 0;
+        padding: 0;
+      overflow:hidden;}
 
     /* Style for custom star markers */
     .star-marker {
@@ -69,6 +72,7 @@
 
     // Function to close the popup when the "Close" button is clicked
       //hi
+      //hello
     function closePopup() {
       map.closePopup();
     }
