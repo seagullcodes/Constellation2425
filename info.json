@@ -1,0 +1,375 @@
+[
+  {
+    "title": "#1 | Portfolio Feedback Roboctopi",
+    "description": "Escondido, USA<br><i>April 23, 2024</i>",
+    "takeaway": "We focused on providing feedback to refine their portfolio's visual branding and consistency, which has inspired us to enhance our own documentation and presentation. Their clean CAD model displays showed us the value of precision and consistency in design. We were inspired by their management of so many FLL teams, which highlighted the importance of strong organization and planning.",
+    "color": "it",
+    "coordinates": { "lat": 33.1192, "lng": -117.0864 }
+  },
+  {
+    "title": "PF Fulminata",
+    "description": "Seguin, USA",
+    "takeaway": "Improving portfolio organization and spacing is key to better showcasing accomplishments in engineering, outreach, and design, which is a mindset we keep in mind through our own portfolio and feedback/advice we share!",
+    "color": "it",
+    "coordinates": { "lat": 29.5688, "lng": -97.9647 }
+  },
+  {
+    "title": "PF Cubotics",
+    "description": "New Orleans, USA",
+    "color": "it",
+    "coordinates": { "lat": 29.9511, "lng": -90.0715 }
+  },
+  {
+    "title": "PF Wormgear Warriors",
+    "description": "Edwardsville, USA",
+    "color": "it",
+    "coordinates": { "lat": 38.8114, "lng": -89.9532 }
+  },
+  {
+    "title": "PF Tech Tigers",
+    "description": "Sharon, USA",
+    "color": "it",
+    "coordinates": { "lat": 42.1234, "lng": -71.1787 }
+  },
+  {
+    "title": "PF Electric Gears",
+    "description": "Torreón, Mexico",
+    "color": "it",
+    "coordinates": { "lat": 25.5439, "lng": -103.4068 }
+  },
+  {
+    "title": "PF Cerebotics",
+    "description": "Torreón, Mexico",
+    "color": "it",
+    "coordinates": { "lat": 25.5439, "lng": -103.4068 }
+  },
+  {
+    "title": "PF Operation TAC",
+    "description": "San Juan Capistrano, USA",
+    "color": "it",
+    "coordinates": { "lat": 33.5017, "lng": -117.6625 }
+  },
+  {
+    "title": "Mar Vista",
+    "description": "Los Angeles, USA",
+    "color": "m",
+    "coordinates": { "lat": 34.0522, "lng": -118.2437 }
+  },
+  {
+    "title": "PF The Indubitables",
+    "description": "Omaha, USA",
+    "color": "it",
+    "coordinates": { "lat": 41.2565, "lng": -95.9345 }
+  },
+  {
+    "title": "Call with Nexus",
+    "description": "Goiás, Brazil",
+    "color": "it",
+    "coordinates": { "lat": -15.8270, "lng": -49.8362 }
+  },
+  {
+    "title": "PF Uzbekistan FIRST Global",
+    "description": "Tashkent, Uzbekistan",
+    "color": "it",
+    "coordinates": { "lat": 41.2995, "lng": 69.2401 }
+  },
+  {
+    "title": "Kickoff Portfolio Pres.",
+    "description": "Monrovia, USA",
+    "color": "it",
+    "coordinates": { "lat": 34.1443, "lng": -118.0019 }
+  },
+  {
+    "title": "Kickoff Portfolio Pres.",
+    "description": "Monrovia, USA",
+    "color": "it",
+    "coordinates": { "lat": 34.1443, "lng": -118.0019 }
+  },
+  {
+    "title": "PF Superbots",
+    "description": "Los Angeles, USA",
+    "color": "it",
+    "coordinates": { "lat": 34.0522, "lng": -118.2437 }
+  },
+  {
+    "title": "Call with Giovanni Beltran",
+    "description": "Chicago, USA",
+    "color": "c",
+    "coordinates": { "lat": 41.8781, "lng": -87.6298 }
+  },
+  {
+    "title": "PF North Wind",
+    "description": "St. Petersburg, Russia",
+    "color": "it",
+    "coordinates": { "lat": 59.9343, "lng": 30.3351 }
+  },
+  {
+    "title": "Call with PML Northwind",
+    "description": "Saint-Petersburg, Russia",
+    "color": "it",
+    "coordinates": { "lat": 59.9343, "lng": 30.3351 }
+  },
+  {
+    "title": "Call with 15400 JH Roboduckies",
+    "description": "Jackson, USA",
+    "color": "it",
+    "coordinates": { "lat": 43.4799, "lng": -110.7624 }
+  },
+  {
+    "title": "William Sosropartono and Jovanka Sosropartono from Lockheed Martin",
+    "description": "Fort Worth, USA",
+    "color": "c",
+    "coordinates": { "lat": 32.7555, "lng": -97.3308 }
+  },
+  {
+    "title": "Call with RobKings Aurum 12993",
+    "description": "Sunshine Coast, Australia",
+    "color": "it",
+    "coordinates": { "lat": -26.6500, "lng": 153.0667 }
+  },
+  {
+    "title": "Call with PlumBum 24475",
+    "description": "Vilnius, Lithuania",
+    "color": "it",
+    "coordinates": { "lat": 54.6872, "lng": 25.2797 }
+  },
+  {
+    "title": "Call with Blue Potato Lobsters 21616",
+    "description": "Berwick, USA",
+    "color": "it",
+    "coordinates": { "lat": 43.0598, "lng": -70.8653 }
+  }
+  {
+    "title": "Call with 13334 Spence Lightsabers",
+    "description": "NYC, USA",
+    "color": "it",
+    "coordinates": { "lat": 40.7128, "lng": -74.0060 }
+  },
+  {
+    "title": "Call with Anna David",
+    "description": "Pittsburgh, USA",
+    "color": "c",
+    "coordinates": { "lat": 40.4406, "lng": -79.9959 }
+  },
+  {
+    "title": "Call with T.W.C.A 16091",
+    "description": "Hurricane, USA",
+    "color": "it",
+    "coordinates": { "lat": 37.1753, "lng": -113.2899 }
+  },
+  {
+    "title": "Call with Asset Waffles",
+    "description": "Honolulu, USA",
+    "color": "it",
+    "coordinates": { "lat": 21.3069, "lng": -157.8583 }
+  },
+  {
+    "title": "Cookies for Curiosity Bake Sale",
+    "description": "Los Angeles, USA",
+    "color": "m",
+    "coordinates": { "lat": 34.0522, "lng": -118.2437 }
+  },
+  {
+    "title": "Call with Tennessine Titans",
+    "description": "Maryville, USA",
+    "color": "it",
+    "coordinates": { "lat": 35.7565, "lng": -83.9705 }
+  },
+  {
+    "title": "Call with Force Green Robotics",
+    "description": "St. Louis, USA",
+    "color": "it",
+    "coordinates": { "lat": 38.6270, "lng": -90.1994 }
+  },
+  {
+    "title": "PID Worlds Forum",
+    "description": "Almaty, Kazakhstan",
+    "color": "it",
+    "coordinates": { "lat": 43.2220, "lng": 76.8512 }
+  },
+  {
+    "title": "Call with RoboKings Thorum 18439",
+    "description": "Sunshine Coast, Australia",
+    "color": "it",
+    "coordinates": { "lat": -26.6500, "lng": 153.0667 }
+  },
+  {
+    "title": "Call with JC Robotics Club",
+    "description": "Kingston, Jamaica",
+    "color": "it",
+    "coordinates": { "lat": 17.9714, "lng": -76.7923 }
+  },
+  {
+    "title": "Call with Armored Artemises",
+    "description": "Glastonbury, USA",
+    "color": "it",
+    "coordinates": { "lat": 41.7129, "lng": -72.6089 }
+  },
+  {
+    "title": "Marlborough Admissions Open House",
+    "description": "West Hollywood, USA",
+    "color": "m",
+    "coordinates": { "lat": 34.0900, "lng": -118.3617 }
+  },
+  {
+    "title": "Interview with Team Leo",
+    "description": "Roseburg, USA",
+    "color": "it",
+    "coordinates": { "lat": 43.2165, "lng": -123.3417 }
+  },
+  {
+    "title": "Call with Katy Holst for Guidance w/ Linkage",
+    "description": "Houston, USA",
+    "color": "c",
+    "coordinates": { "lat": 29.7604, "lng": -95.3698 }
+  },
+  {
+    "title": "Call with Broombots",
+    "description": "Broomfield, USA",
+    "color": "it",
+    "coordinates": { "lat": 39.9205, "lng": -105.0867 }
+  },
+  {
+    "title": "FirstLikeAGirl Ambassador Meeting",
+    "description": "Los Angeles, USA",
+    "color": "it",
+    "coordinates": { "lat": 34.0522, "lng": -118.2437 }
+  },
+  {
+    "title": "Rockwell Collins Automation Fair",
+    "description": "Anaheim, USA",
+    "color": "c",
+    "coordinates": { "lat": 33.8366, "lng": -117.9143 }
+  },
+  {
+    "title": "Call with Jade innovations",
+    "description": "Potomac, USA",
+    "color": "it",
+    "coordinates": { "lat": 39.0182, "lng": -77.2086 }
+  },
+  {
+    "title": "Call with Team Love Lace",
+    "description": "New York City, USA",
+    "color": "it",
+    "coordinates": { "lat": 40.7128, "lng": -74.0060 }
+  },
+  {
+    "title": "Raytheon",
+    "description": "Hawthorne, USA",
+    "color": "c",
+    "coordinates": { "lat": 33.9164, "lng": -118.3526 }
+  },
+  {
+    "title": "Call with Leggo My Eggo",
+    "description": "Meridian, USA",
+    "color": "it",
+    "coordinates": { "lat": 43.6121, "lng": -116.3915 }
+  },
+  {
+    "title": "Call with Mechanical Mages",
+    "description": "Portland, USA",
+    "color": "it",
+    "coordinates": { "lat": 45.5051, "lng": -122.6750 }
+  },
+  {
+    "title": "Call with BotBot",
+    "description": "Los Angeles, USA",
+    "color": "it",
+    "coordinates": { "lat": 34.0522, "lng": -118.2437 }
+  },
+  {
+    "title": "Honeybee Robotics Facility Tour",
+    "description": "Altadena, USA",
+    "color": "c",
+    "coordinates": { "lat": 34.1902, "lng": -118.1316 }
+  },
+  {
+    "title": "Call with Golden Ratio 12682",
+    "description": "Cary, USA",
+    "color": "it",
+    "coordinates": { "lat": 42.2114, "lng": -88.2387 }
+  },
+  {
+    "title": "TechAttack Champion Summit",
+    "description": "Los Angeles, USA",
+    "color": "it",
+    "coordinates": { "lat": 34.0522, "lng": -118.2437 }
+  },
+  {
+    "title": "Call with Everest 23060 (Never showed up)",
+    "description": "Sao Luiz, Brazil",
+    "color": "it",
+    "coordinates": { "lat": -2.5297, "lng": -44.3028 }
+  },
+  {
+    "title": "PID Expert Call",
+    "description": "South Winsdor, USA",
+    "color": "c",
+    "coordinates": { "lat": 41.8487, "lng": -72.5712 }
+  },
+  {
+    "title": "Call with Geniuses 19353",
+    "description": "Tripoli, Libya",
+    "color": "it",
+    "coordinates": { "lat": 32.8854, "lng": 13.1800 }
+  },
+  {
+    "title": "Call with G-Force 19013",
+    "description": "Mumbai, India",
+    "color": "it",
+    "coordinates": { "lat": 19.0760, "lng": 72.8777 }
+  },
+  {
+    "title": "Call with 22043 UniRevSels",
+    "description": "Piraeus, Greece",
+    "color": "it",
+    "coordinates": { "lat": 37.9421, "lng": 23.6465 }
+  },
+  {
+    "title": "CEE FLL Team Coaching",
+    "description": "West Hollywood, USA",
+    "color": "m",
+    "coordinates": { "lat": 34.0900, "lng": -118.3617 }
+  },
+  {
+    "title": "Female Empowerment in STEM Summit",
+    "description": "Los Angeles, USA",
+    "color": "c",
+    "coordinates": { "lat": 34.0522, "lng": -118.2437 }
+  },
+  {
+    "title": "Call with 7105 SwiftRobotics",
+    "description": "Vass, USA",
+    "color": "it",
+    "coordinates": { "lat": 35.2552, "lng": -79.2817 }
+  },
+  {
+    "title": "PF The Occam's Razor Clams",
+    "description": "Providence, USA",
+    "coordinates": { "lat": 41.8240, "lng": -71.4128 }
+  },
+  {
+    "title": "Meeting with 636",
+    "description": "Providence, USA",
+    "color": "it",
+    "coordinates": { "lat": 41.8240, "lng": -71.4128 }
+  },
+  {
+    "title": "Meeting with 24881",
+    "description": "Astana, Kazakhstan",
+    "color": "it",
+    "coordinates": { "lat": 51.1801, "lng": 71.4460 }
+  },
+  {
+    "title": "Portfolio Advice for Team 16063",
+    "description": "Joinville, Brazil",
+    "color": "it",
+    "coordinates": { "lat": -26.3044, "lng": -48.8487 }
+  },
+  {
+    "title": "Meeting with Cassiopia",
+    "description": "London, England",
+    "color": "it",
+    "coordinates": { "lat": 51.5074, "lng": -0.1278 }
+  }
+]

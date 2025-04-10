@@ -6,6 +6,7 @@
 const it = "#861f18ff";
 const c  = "#d94234ff";
 const m = "#f0a202ff";
+const co = "#ffffff";
 
    const stars = [
     { 
@@ -651,14 +652,40 @@ const m = "#f0a202ff";
         description: "San Fernado, USA",
         color: m,
         coordinates: { lat: 34.2819, lng: -118.4386 }
-      }
+      },
+       
+        {
+        title: "G Force",
+        description: "Mumbai, India",
+        color: co,
+        coordinates: { lat: 19.0760, lng: 72.8777 } 
+      },
 
+         {
+        title: "The Golden Ratio",
+        description: "Cary, USA",
+        color: co,
+        coordinates: { lat: 42.2132, lng: -88.2477}
+         },
+       {
+        title: "Bionica",
+        description: "Hewlett, USA",
+        color: co,
+        coordinates: {lat: 40.6432, lng: -73.6957}
+       },
+  {
+      title: "Robokings Aurum",
+        description: "Sunshine Coast, Australia",
+        color: co,
+        coordinates: { lat:-26.6528, lng: 153.0896}
+       }  
+       
     ];
 
 const lines = [
   {
-    start: { lat: 40.7128, lng: -74.0060 },
-    end: { lat: 34.0522, lng: -118.2437 },
+    start: { lat: 19.0760, lng:72.8777},
+    end: { lat: 42.2132, lng: -88.2477},
     popupContent: `
       <div style="width:220px">
         <h4>NYC to LA</h4>
@@ -666,19 +693,20 @@ const lines = [
         <button onclick="this.closest('.maplibregl-popup').remove()">Close</button>
       </div>
     `,
-    options: { color: 'red', weight: 3 }
+    options: { color: 'white', weight: 3 }
   },
-  {
-    start: { lat: 51.5074, lng: -0.1278 },
-    end: { lat: 40.7128, lng: -74.0060 },
+    
+      {
+    start: {lat: 40.6432, lng: -73.6957},
+    end: { lat:-26.6528, lng: 153.0896},
     popupContent: `
       <div style="width:220px">
-        <h4>London to NYC</h4>
-        <p>This line connects London and New York City.</p>
+        <h4>NYC to LA</h4>
+        <p>This line connects New York City and Los Angeles.</p>
         <button onclick="this.closest('.maplibregl-popup').remove()">Close</button>
       </div>
     `,
-    options: { color: 'purple', weight: 3 }
+    options: { color: 'white', weight: 3 }
   }
 ];
 
@@ -689,14 +717,14 @@ function createStarIcon(color) {
   const svg = `
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
       <polygon points="12,2 15,10 24,10 17,15 20,23 12,18 4,23 7,15 0,10 9,10"
-        fill="${color}" stroke="black" stroke-width="1"/>
+        fill="${color}" stroke="black" stroke-width="0.5"/>
     </svg>`;
   const encodedSVG = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
   const el = document.createElement('div');
   el.className = 'star-marker';
   el.style.backgroundImage = `url("${encodedSVG}")`;
-  el.style.width = '24px';
-  el.style.height = '24px';
+ // el.style.width = '24px';
+ // el.style.height = '24px';
   return el;
 }
 
@@ -754,62 +782,33 @@ Object.keys(groupedStars).forEach((key, index) => {
   marker.setPopup(popup);
 });
 
-/***************************************
- * Adding Lines to the Map
- ***************************************/
 lines.forEach((line, index) => {
   const id = `line-${index}`;
 
   map.on('load', () => {
-    map.addSource(id, {
-      'type': 'geojson',
-      'data': {
-        'type': 'Feature',
-        'geometry': {
-          'type': 'LineString',
-          'coordinates': [
-            [line.start.lng, line.start.lat],
-            [line.end.lng, line.end.lat]
-          ]
+    // Check if the source already exists to avoid duplicating it
+    if (!map.getSource(id)) {
+      // Add the line source to the map
+      map.addSource(id, {
+        'type': 'geojson',
+        'data': {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'LineString',
+            'coordinates': [
+              [line.start.lng, line.start.lat],
+              [line.end.lng, line.end.lat]
+            ]
+          }
         }
-      }
-    });
+      });
+    }
 
+    // Add the line layer to the map
     map.addLayer({
       'id': id,
       'type': 'line',
       'source': id,
       'layout': {
         'line-cap': 'round',
-        'line-join': 'round'
-      },
-      'paint': {
-        'line-color': line.options.color || 'white',
-        'line-width': line.options.weight || 3,
-        'line-opacity': 0.8
-      }
-    });
-
-    // Sparkle animation effect simulation (opacity wiggle)
-    setInterval(() => {
-      const opacity = 0.7 + Math.random() * 0.3;
-      map.setPaintProperty(id, 'line-opacity', opacity);
-    }, 500);
-
-    // Add click popup
-    map.on('click', id, (e) => {
-      new maplibregl.Popup()
-        .setLngLat(e.lngLat)
-        .setHTML(line.popupContent)
-        .addTo(map);
-    });
-
-    // Change cursor when hovering
-    map.on('mouseenter', id, () => {
-      map.getCanvas().style.cursor = 'pointer';
-    });
-    map.on('mouseleave', id, () => {
-      map.getCanvas().style.cursor = '';
-    });
-  });
-});
+        'line-join': 
