@@ -49,3 +49,17 @@ stroke-width: 0;
     @keyframes sparkle {
       0% {
         stroke-opacity: 1;
+        stroke-width: 1;
+      }
+      50% {
+        stroke-opacity: 3; 
+        stroke-width: 2;   
+      }
+      100% {
+        stroke-opacity: 4;
+        stroke-width: 3;
+      }
+    }
+
+
+
