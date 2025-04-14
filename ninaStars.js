@@ -805,9 +805,6 @@ const lines = [
   }
 ];
 
-/***************************************
- * Helper Functions
- ***************************************/
 function createStarIcon(color) {
   const svg = `
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -818,8 +815,6 @@ function createStarIcon(color) {
   const el = document.createElement('div');
   el.className = 'star-marker';
   el.style.backgroundImage = `url("${encodedSVG}")`;
- // el.style.width = '24px';
- // el.style.height = '24px';
   return el;
 }
 
@@ -830,10 +825,7 @@ function openTakeaway(button) {
 }
 
 function closeTakeaway(takeawayDiv) {
-  // Hide this takeaway
   takeawayDiv.style.display = 'none';
-  
-  // Show its corresponding button
   const takeawayId = takeawayDiv.id;
   const button = document.querySelector(`button[data-takeaway-id="${takeawayId}"]`);
   if (button) {
@@ -863,9 +855,8 @@ stars.forEach(star => {
 Object.keys(groupedStars).forEach((key, index) => {
   const [lat, lng] = key.split(',').map(Number);
   const eventsAtLocation = groupedStars[key];
-
   const markerEl = createStarIcon(eventsAtLocation[0].color);
-  
+
   const marker = new maplibregl.Marker({ element: markerEl })
     .setLngLat([lng, lat])
     .addTo(map);
@@ -881,31 +872,48 @@ Object.keys(groupedStars).forEach((key, index) => {
           onclick="document.getElementById('takeaway-${index}-${i}').style.display = 'block'; this.style.display = 'none';">
           Takeaway
         </button>
-       <div 
-  id="takeaway-${index}-${i}" 
-  class="takeaway" 
-  style="display:none; margin-top:4px; color: #861f18; cursor:pointer;"
-  onclick="closeTakeaway(this)">
-  ${event.takeaway}
-</div>
+        <div 
+          id="takeaway-${index}-${i}" 
+          class="takeaway" 
+          style="display:none; margin-top:4px; color: #861f18; cursor:pointer;"
+          onclick="closeTakeaway(this)">
+          ${event.takeaway}
+        </div>
       </div>
     `;
   });
   popupContent += `</div>`;
 
-  const popup = new maplibregl.Popup({ offset: 25 })
-    .setHTML(popupContent);
-
+  const popup = new maplibregl.Popup({ offset: 25 }).setHTML(popupContent);
   marker.setPopup(popup);
 });
 
+/***************************************
+ * Animate Sparkle Effect for Lines
+ ***************************************/
+function animateLineSparkle(layerId) {
+  const sparkleFrames = [
+    { width: 1, opacity: 0.5 },
+    { width: 2, opacity: 0.8 },
+    { width: 3, opacity: 1 },
+    { width: 2, opacity: 0.7 },
+  ];
+  let frame = 0;
+  setInterval(() => {
+    const { width, opacity } = sparkleFrames[frame];
+    map.setPaintProperty(layerId, 'line-width', width);
+    map.setPaintProperty(layerId, 'line-opacity', opacity);
+    frame = (frame + 1) % sparkleFrames.length;
+  }, 200);
+}
+
+/***************************************
+ * Add Lines to Map
+ ***************************************/
 lines.forEach((line, index) => {
   const id = `line-${index}`;
-
   map.on('load', () => {
-    // Check if the source already exists to avoid duplicating it
     if (!map.getSource(id)) {
-      // Add the line source to the map
       map.addSource(id, {
         'type': 'geojson',
         'data': {
@@ -921,7 +929,6 @@ lines.forEach((line, index) => {
       });
     }
 
-    // Add the line layer to the map
     map.addLayer({
       'id': id,
       'type': 'line',
@@ -931,22 +938,24 @@ lines.forEach((line, index) => {
         'line-join': 'round'
       },
       'paint': {
-        'line-color': 'white',  // Static white for the line color
-        'line-width': line.options.weight || 1,  // Thin line width
-        'line-opacity': 1,  // Full opacity
-        'line-blur': 2    // Moderate blur for a subtle glow effect
+        'line-color': line.options.color || 'white',
+        'line-width': line.options.weight || 1,
+        'line-opacity': 1,
+        'line-blur': 2
       }
     });
 
-    // Add click popup
+    // Start the sparkle animation
+    animateLineSparkle(id);
+
+    // Optional: click behavior
     map.on('click', id, (e) => {
       new maplibregl.Popup()
         .setLngLat(e.lngLat)
-        .setHTML(line.popupContent)
+        .setHTML(line.popupContent || '')
         .addTo(map);
     });
 
-    // Change cursor on hover
     map.on('mouseenter', id, () => {
       map.getCanvas().style.cursor = 'pointer';
     });
@@ -954,7 +963,4 @@ lines.forEach((line, index) => {
       map.getCanvas().style.cursor = '';
     });
   });
-    
-
 });
-

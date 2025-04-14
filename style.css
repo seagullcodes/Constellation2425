@@ -36,30 +36,30 @@ stroke-width: 0;
   background-position: center center;
 }
 
-    .sparkle-line {
-      /* Apply our SVG glow filter */
-      filter: url(#glow);
-      /* Set an initial stroke properties if not already defined in your options */
-      stroke: #fff;  /* white or change as needed */
-      stroke-width: 2;
-      /* Animate to create a sparkling effect */
-      animation: sparkle .6s infinite;
-    }
+.sparkle-line {
+  /* Apply our SVG glow filter */
+  filter: url(#glow);
+  /* Set an initial stroke properties if not already defined in your options */
+  stroke: #fff;  /* white or change as needed */
+  stroke-width: 2;
+  /* Animate to create a sparkling effect */
+  animation: sparkle .2s infinite;
+}
 
-    @keyframes sparkle {
-      0% {
-        stroke-opacity: 1;
-        stroke-width: 1;
-      }
-      50% {
-        stroke-opacity: 3; 
-        stroke-width: 2;   
-      }
-      100% {
-        stroke-opacity: 4;
-        stroke-width: 3;
-      }
-    }
+@keyframes sparkle {
+  0% {
+    stroke-opacity: .5;
+    stroke-width: 1;
+  }
+  50% {
+    stroke-opacity: 3; 
+    stroke-width: 2;   
+  }
+  100% {
+    stroke-opacity: 4;
+    stroke-width: 3;
+  }
+}
 
 
 
