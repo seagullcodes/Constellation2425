@@ -146,7 +146,7 @@ const co = "#ffffff";
         title: "William Sosropartono and Jovanka Sosropartono from Lockheed Martin",
         description: "Fort Worth, USA",
         color: c,
-        takeaway: "EMPTY",
+        takeaway: "Don’t be afraid to make changes and keep on iterating.",
         coordinates: { lat: 32.7555, lng: -97.3308 }
       },
       {
@@ -391,7 +391,7 @@ const co = "#ffffff";
         title: "CEE FLL Team Coaching",
         description: "West Hollywood, USA",
         color: m,
-        takeaway: "EMPTY",
+        takeaway: "Teaching young, female roboticists important problem solving skills allows them to take on bigger challenges",
         coordinates: { lat: 34.0900, lng: -118.3617 }
       },
       {
@@ -412,14 +412,14 @@ const co = "#ffffff";
         title: "Meeting with 636",
         description: "Providence, USA",
         color: it,
-        takeaway: "EMPTY",
+        takeaway: "It is meaningful to be able to extend our feedback and support past the portfolio.",
         coordinates: { lat: 41.8240, lng: -71.4128 }
       },
       {
         title: "Meeting with 24881",
         description: "Astana, Kazakhstan",
         color: it,
-        takeaway: "EMPTY",
+        takeaway: "Adaptive strategies for sourcing parts and using CAD to create robot models allow teams that may have difficult sourcing traditional parts build competitive robots.",
         coordinates: { lat: 51.1801, lng: 71.4460 }
       },
       {
@@ -433,7 +433,7 @@ const co = "#ffffff";
         title: "Meeting with Cassiopia",
         description: "London, England",
         color: it,
-        takeaway: "EMPTY",
+        takeaway: "Connecting with other female teams around the world helped us exchange ideas about new drivetrain techniques and build community. ",
         coordinates: { lat: 51.5074, lng: -0.1278 }
       },
       {
