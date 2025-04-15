@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Constellation by Curiosity</title>
+    <title>Constellation by Curiosity 11770</title>
     <link href="https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.css" rel="stylesheet" />
     <link rel="stylesheet" href = "style.css">
     <script src="https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.js"></script>
@@ -104,6 +104,26 @@
     </script>
 
     <script src="ninaStars.js"></script>
+    <script>
+        // Close any open takeaway if clicked outside
+        document.addEventListener('click', function (event) {
+          const takeawayOpen = event.target.closest('.takeaway');
+          const takeawayButton = event.target.closest('button');
+      
+          // Only close if the click is NOT on a takeaway or button
+          if (!takeawayOpen && !takeawayButton) {
+            document.querySelectorAll('.takeaway').forEach(takeaway => {
+              takeaway.style.display = 'none';
+            });
+            document.querySelectorAll('button').forEach(button => {
+              if (button.textContent.trim() === 'Takeaway') {
+                button.style.display = 'inline-block';
+              }
+            });
+          }
+        });
+      </script>
+      
 </body>
 </html>
 

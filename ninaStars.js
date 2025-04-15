@@ -244,7 +244,7 @@ const co = "#ffffff";
         title: "Call with Armored Artemises",
         description: "Glastonbury, USA",
         color: it,
-        takeaway: "EMPTY", 
+        takeaway: "Teams who play in smaller regions/states often get to play more regionals, giving them more time to refine their robot. Spending a lot of time on driver practice allows a robot and driveteam to perform well with less unpredictable errors, and they implement a similar team structure to ours that they have also seen payoff.", 
         coordinates: { lat: 41.7129, lng: -72.6089}
       },
       {
@@ -405,7 +405,7 @@ const co = "#ffffff";
         title: "PF The Occam's Razor Clams",
         description: "Providence, USA",
         color: it,
-        takeaway: "EMPTY",
+        takeaway: "Colorful branding can capture a reader's attention and help them stay engage. The usage of charts, graphs, and other media allows a team to display all sorts of information while maintaing this engagement.",
         coordinates: { lat: 41.8240, lng: -71.4128 }
       },
       {
@@ -426,7 +426,7 @@ const co = "#ffffff";
         title: "Portfolio Advice for Team 16063",
         description: "Joinville, Brazil",
         color: it,
-        takeaway: "EMPTY",
+        takeaway: "Using creative online tools and resources can allow us to share our advice no matter what boundaries exsist. Making sure our social media has a wide reach allows teams around the world to access portfolio support.",
         coordinates: { lat: -26.3044, lng: -48.8487 }
       },
       {
@@ -468,7 +468,7 @@ const co = "#ffffff";
         title: "Call w/ Charlie Justiz (NASA)",
         description: "Palm Springs, USA",
         color: c,
-        takeaway: "EMPTY",
+        takeaway: "Careful selection of sensors is necessary when building a robot with limited computing and battery powers. Using intelligent ways to track motion, specifically across the field, and creating fool-proof localization tatics allow a team to perform their best at all periods of the game.",
         coordinates: { lat: 33.8303, lng: -116.5453 }
       },
       {
