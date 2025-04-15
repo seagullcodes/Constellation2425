@@ -776,7 +776,44 @@
          description: "Sunshine Coast, Australia",
          color: co,
          coordinates: { lat:-26.6528, lng: 153.0896}
-        }  
+        },
+        {
+         title: "Constellation Team: 21457 Tennessine Titans",
+         description: "Maryvile, USA",
+         color: co,
+         coordinates: {lat: 35.7565, lng: -83.9705}
+        },
+        {
+          title: "Constellation Team: 8404 Quixsilver",
+          description: "San Jose, USA",
+          color: co,
+          coordinates: {lat: 37.3387, lng: -121.8853}
+         },
+         {
+          title: "Constellation Team: 20701 Team Lovelace",
+          description: "New York, USA",
+          color: co,
+          coordinates: {lat: 40.7128, lng: - 74.0060}
+         },
+         {
+          title: "Constellation Team: 13828 Java Jokers",
+          description: "Milwaukee, USA",
+          color: co,
+          coordinates: {lat: 43.0410, lng: -87.9097}
+         },
+         {
+          title: "Constellation Team: 14340 Haywire",
+          description: "Ipswich, Australia ",
+          color: co,
+          coordinates: {lat: -27.616666, lng: 152.7608}
+         },
+         {
+          title: "Constellation Team: 23224 Cheesy Bytes",
+          description: "San Jose, Australia ",
+          color: co,
+          coordinates: {lat: 37.8, lng: -121.8853}
+         }
+
         
      ];
  
@@ -791,7 +828,22 @@
      start: {lat: 40.6432, lng: -73.6957},
      end: { lat:-26.6528, lng: 153.0896},
      options: { color: 'white', weight: 3 }
-   }
+   },
+   {
+    start: {lat: 35.7565, lng: -83.9705},
+    end: { lat: 37.3387, lng: -121.8853},
+    options: { color: 'white', weight: 3 }
+  },
+  {
+    start:{lat: 40.7128, lng: - 74.0060},
+    end: {lat: 43.0410, lng: -87.9097},
+    options: { color: 'white', weight: 3 }
+  },
+  {
+    start:{lat: -27.616666, lng: 152.7608},
+    end: {lat: 37.8, lng: -121.8853},
+    options: { color: 'white', weight: 3 }
+  }
  ];
  
  function createStarIcon(color) {
