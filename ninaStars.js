@@ -799,51 +799,111 @@
           title: "Constellation Team: 13828 Java Jokers",
           description: "Milwaukee, USA",
           color: co,
-          coordinates: {lat: 43.0410, lng: -87.9097}
-         },
-         {
+          coordinates: { lat: 43.0410, lng: -87.9097 }  // Milwaukee, WI
+        },
+        {
           title: "Constellation Team: 14340 Haywire",
-          description: "Ipswich, Australia ",
+          description: "Ipswich, Australia",
           color: co,
-          coordinates: {lat: -27.616666, lng: 152.7608}
-         },
-         {
+          coordinates: { lat: -27.616666, lng: 152.7608 }  // Ipswich, AU
+        },
+        {
           title: "Constellation Team: 23224 Cheesy Bytes",
-          description: "San Jose, Australia ",
+          description: "San Jose, USA",
           color: co,
-          coordinates: {lat: 37.8, lng: -121.8853}
-         }
+          coordinates: { lat: 37.3382, lng: -121.8863 }  // San Jose, CA
+        },
+        {
+          title: "Constellation Team: 24180 Blue Bananas",
+          description: "Huntsville, USA",
+          color: co,
+          coordinates: { lat: 34.7304, lng: -86.5861 }  // Huntsville, AL
+        },
+        {
+          title: "Constellation Team: 17703 Fullmetal Peregrines",
+          description: "Middletown, USA",
+          color: co,
+          coordinates: { lat: 41.5623, lng: -72.6506 }  // Middletown, CT
+        },
+        {
+          title: "Constellation Team: 6133 The Nuts",
+          description: "Cincinnati, USA",
+          color: co,
+          coordinates: { lat: 39.1031, lng: -84.5120 }  // Cincinnati, OH
+        },
+        {
+          title: "Constellation Team: 3188 Squiggle Splat Bang",
+          description: "Powell, USA",
+          color: co,
+          coordinates: { lat: 44.7538, lng: -108.7574 }  // Powell, WY
+        },
+        {
+          title: "Constellation Team: Fibonacci 14126",
+          description: "Springfield, USA",
+          color: co,
+          coordinates: { lat: 44.0462, lng: -123.0220 }  // Springfield, OR
+        },
+        {
+          title: "Constellation Team: 23493 Techno Domination",
+          description: "Solon, USA",
+          color: co,
+          coordinates: { lat: 41.3898, lng: -81.4412 }  // Solon, OH
+        }
 
         
      ];
  
  const lines = [
-   {
-     start: { lat: 19.0760, lng:72.8777},
-     end: { lat: 42.2132, lng: -88.2477},
-     options: { color: 'white', weight: 3 }
-   },
-     
-       {
-     start: {lat: 40.6432, lng: -73.6957},
-     end: { lat:-26.6528, lng: 153.0896},
-     options: { color: 'white', weight: 3 }
-   },
-   {
-    start: {lat: 35.7565, lng: -83.9705},
-    end: { lat: 37.3387, lng: -121.8853},
-    options: { color: 'white', weight: 3 }
-  },
-  {
-    start:{lat: 40.7128, lng: - 74.0060},
-    end: {lat: 43.0410, lng: -87.9097},
-    options: { color: 'white', weight: 3 }
-  },
-  {
-    start:{lat: -27.616666, lng: 152.7608},
-    end: {lat: 37.8, lng: -121.8853},
-    options: { color: 'white', weight: 3 }
-  }
+    {
+      // Connects Springfield, OR to Solon, OH
+      start: { lat: 44.0462, lng: -123.0220 }, // Springfield, OR (Fibonacci)
+      end: { lat: 41.3898, lng: -81.4412 },    // Solon, OH (Techno Domination)
+      options: { color: 'white', weight: 3 }
+    },
+    {
+      // Connects Cincinnati, OH to Powell, WY
+      start: { lat: 39.1031, lng: -84.5120 },   // Cincinnati, OH (The Nuts)
+      end: { lat: 44.7538, lng: -108.7574 },      // Powell, WY (Squiggle Splat Bang)
+      options: { color: 'white', weight: 3 }
+    },
+    {
+      // Remains unchanged as these coordinates were not referenced in your corrections
+      start: { lat: 19.0760, lng: 72.8777 },
+      end: { lat: 42.2132, lng: -88.2477 },
+      options: { color: 'white', weight: 3 }
+    },
+    {
+      // Connects Huntsville, AL to Middletown, CT
+      start: { lat: 34.7304, lng: -86.5861 },    // Huntsville, AL (Blue Bananas)
+      end: { lat: 41.5623, lng: -72.6506 },       // Middletown, CT (Fullmetal Peregrines)
+      options: { color: 'white', weight: 3 }
+    },
+    {
+      // Remains unchanged (NY region to an Australian location, perhaps for a separate visual)
+      start: { lat: 40.6432, lng: -73.6957 },
+      end: { lat: -26.6528, lng: 153.0896 },
+      options: { color: 'white', weight: 3 }
+    },
+    {
+      // Connects an external point to San Jose, CA (Cheesy Bytes) – updated end coordinate
+      start: { lat: 35.7565, lng: -83.9705 },
+      end: { lat: 37.3382, lng: -121.8863 },
+      options: { color: 'white', weight: 3 }
+    },
+    {
+      // Connects New York City to Milwaukee – unchanged
+      start: { lat: 40.7128, lng: -74.0060 },
+      end: { lat: 43.0410, lng: -87.9097 },
+      options: { color: 'white', weight: 3 }
+    },
+    {
+      // Connects Ipswich, Australia to San Jose, CA (Cheesy Bytes) – updated end coordinate
+      start: { lat: -27.616666, lng: 152.7608 },
+      end: { lat: 37.3382, lng: -121.8863 },
+      options: { color: 'white', weight: 3 }
+    }
+
+  
  ];
  
  function createStarIcon(color) {
@@ -964,57 +1024,76 @@
  /***************************************
   * Add Lines to Map
   ***************************************/
- lines.forEach((line, index) => {
-   const id = `line-${index}`;
-   map.on('load', () => {
-     if (!map.getSource(id)) {
-       map.addSource(id, {
-         'type': 'geojson',
-         'data': {
-           'type': 'Feature',
-           'geometry': {
-             'type': 'LineString',
-             'coordinates': [
-               [line.start.lng - .75, line.start.lat],
-               [line.end.lng - .75, line.end.lat]
-             ]
-           }
-         }
-       });
-     }
- 
-     map.addLayer({
-       'id': id,
-       'type': 'line',
-       'source': id,
-       'layout': {
-         'line-cap': 'round',
-         'line-join': 'round'
-       },
-       'paint': {
-         'line-color': line.options.color || 'white',
-         'line-width': line.options.weight || 1,
-         'line-opacity': 1,
-         'line-blur': 2
-       }
-     });
- 
-     // Start the sparkle animation
-     animateLineSparkle(id);
- 
-     // Optional: click behavior
-     map.on('click', id, (e) => {
-       new maplibregl.Popup()
-         .setLngLat(e.lngLat)
-         .setHTML(line.popupContent || '')
-         .addTo(map);
-     });
- 
-     map.on('mouseenter', id, () => {
-       map.getCanvas().style.cursor = 'pointer';
-     });
-     map.on('mouseleave', id, () => {
-       map.getCanvas().style.cursor = '';
-     });
-   });
- });
+  lines.forEach((line, index) => {
+    const id = `line-${index}`;
+  
+    map.on('load', () => {
+      if (!map.getSource(id)) {
+        map.addSource(id, {
+          'type': 'geojson',
+          'data': {
+            'type': 'Feature',
+            'geometry': {
+              'type': 'LineString',
+              'coordinates': [
+                [line.start.lng - 0.75, line.start.lat],
+                [line.end.lng - 0.75, line.end.lat]
+              ]
+            }
+          }
+        });
+      }
+  
+      map.addLayer({
+        'id': id,
+        'type': 'line',
+        'source': id,
+        'layout': {
+          'line-cap': 'round',
+          'line-join': 'round'
+        },
+        'paint': {
+          'line-color': line.options.color || 'white',
+          'line-width': line.options.weight || 1,
+          'line-opacity': 0.7,
+          'line-blur': 2
+        }
+      });
+  
+      // Start the sparkle animation (pulse-style glow)
+      animateLineSparkle(id);
+  
+      // Optional: click behavior
+      map.on('click', id, (e) => {
+        new maplibregl.Popup()
+          .setLngLat(e.lngLat)
+          .setHTML(line.popupContent || '')
+          .addTo(map);
+      });
+  
+      map.on('mouseenter', id, () => {
+        map.getCanvas().style.cursor = 'pointer';
+      });
+      map.on('mouseleave', id, () => {
+        map.getCanvas().style.cursor = '';
+      });
+    });
+  
+    // Function to pulse-glow the line
+    function animateLineSparkle(layerId) {
+      let t = 0;
+      const animate = () => {
+        const opacity = 0.6 + 0.4 * Math.sin(t);
+        const blur = 1.5 + 1.0 * Math.sin(t);
+  
+        if (map.getLayer(layerId)) {
+          map.setPaintProperty(layerId, 'line-opacity', opacity);
+          map.setPaintProperty(layerId, 'line-blur', blur);
+        }
+  
+        t += 0.05;
+        requestAnimationFrame(animate);
+      };
+      animate();
+    }
+  });
