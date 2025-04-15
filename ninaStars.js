@@ -146,7 +146,7 @@ const co = "#ffffff";
         title: "William Sosropartono and Jovanka Sosropartono from Lockheed Martin",
         description: "Fort Worth, USA",
         color: c,
-        takeaway: "EMPTY",
+        takeaway: "Don’t be afraid to make changes and keep on iterating.",
         coordinates: { lat: 32.7555, lng: -97.3308 }
       },
       {
@@ -216,7 +216,7 @@ const co = "#ffffff";
         title: "Call with Force Green Robotics",
         description: "St. Louis, USA",
         color: it,
-        takeaway: "Everyone on their team has super distinct roles/responsibilities, which ensures everything gets done. By outlining more specific teams/groups of people for smaller tasks, we can get them done more efficiently and less small things can slip through the cracks. They have a very different approach to which work is whos, with very strict technical/non-technical divisions, which can create issues and benefits. They also heavily utilized connections when approaching professional connections, which inspired us to reach out to a few more of our connections. We were able to give them advice on judging and pit interviews, which allowed them to better structure future presentations.",
+        takeaway: "Everyone on their team has super distinct roles/responsibilities, which ensures everything gets done. By outlining more specific teams/groups of people for smaller tasks, we can get them done more efficiently and less small things can slip through the cracks. They have a very different approach to which work is whose, with very strict technical/non-technical divisions, which can create issues and benefits. They also heavily utilized connections when approaching professional connections, which inspired us to reach out to a few more of our connections. We were able to give them advice on judging and pit interviews, which allowed them to better structure future presentations.",
         coordinates: { lat: 38.6270, lng: -90.1994 }
       },
       {
@@ -391,15 +391,8 @@ const co = "#ffffff";
         title: "CEE FLL Team Coaching",
         description: "West Hollywood, USA",
         color: m,
-        takeaway: "EMPTY",
+        takeaway: "Teaching young, female roboticists important problem solving skills allows them to take on bigger challenges",
         coordinates: { lat: 34.0900, lng: -118.3617 }
-      },
-      {
-        title: "Female Empowerment in STEM Summit",
-        description: "Los Angeles, USA",
-        color: c,
-        takeaway: "EMPTY",
-        coordinates: { lat: 34.0522, lng: -118.2437 }
       },
       {
         title: "Call with 7105 SwiftRobotics",
@@ -419,14 +412,14 @@ const co = "#ffffff";
         title: "Meeting with 636",
         description: "Providence, USA",
         color: it,
-        takeaway: "EMPTY",
+        takeaway: "It is meaningful to be able to extend our feedback and support past the portfolio.",
         coordinates: { lat: 41.8240, lng: -71.4128 }
       },
       {
         title: "Meeting with 24881",
         description: "Astana, Kazakhstan",
         color: it,
-        takeaway: "EMPTY",
+        takeaway: "Adaptive strategies for sourcing parts and using CAD to create robot models allow teams that may have difficult sourcing traditional parts build competitive robots.",
         coordinates: { lat: 51.1801, lng: 71.4460 }
       },
       {
@@ -440,7 +433,7 @@ const co = "#ffffff";
         title: "Meeting with Cassiopia",
         description: "London, England",
         color: it,
-        takeaway: "EMPTY",
+        takeaway: "Connecting with other female teams around the world helped us exchange ideas about new drivetrain techniques and build community. ",
         coordinates: { lat: 51.5074, lng: -0.1278 }
       },
       {
@@ -763,7 +756,6 @@ const co = "#ffffff";
         title: "Constellation Team: 19013 G Force",
         description: "Mumbai, India",
         color: co,
-        takeaway: "EMPTY",
         coordinates: { lat: 19.0760, lng: 72.8777 } 
       },
 
@@ -771,21 +763,18 @@ const co = "#ffffff";
         title: "Constellation Team: 12682 The Golden Ratio",
         description: "Cary, USA",
         color: co,
-        takeaway: "EMPTY",
         coordinates: { lat: 42.2132, lng: -88.2477}
          },
        {
         title: "Constellation Team: 7120 Bionica",
         description: "Hewlett, USA",
         color: co,
-        takeaway: "EMPTY",
         coordinates: {lat: 40.6432, lng: -73.6957}
        },
   {
       title: "Constellation Team: 12993 Robokings Aurum",
         description: "Sunshine Coast, Australia",
         color: co,
-        takeaway: "EMPTY",
         coordinates: { lat:-26.6528, lng: 153.0896}
        }  
        
@@ -863,6 +852,7 @@ Object.keys(groupedStars).forEach((key, index) => {
 
   let popupContent = `<div style="max-width:250px;">`;
   eventsAtLocation.forEach((event, i) => {
+if(event.takeaway){
     popupContent += `
       <div style="border-bottom:1px solid #ccc; margin-bottom:4px; padding-bottom:4px;">
         <strong style="color: #861f18;">${event.title}</strong><br/>
@@ -881,6 +871,15 @@ Object.keys(groupedStars).forEach((key, index) => {
         </div>
       </div>
     `;
+}if(!event.takeaway){
+  popupContent += `
+      <div style="border-bottom:1px solid #ccc; margin-bottom:4px; padding-bottom:4px;">
+        <strong style="color: #861f18;">${event.title}</strong><br/>
+        <span style="color: #f0a202;">${event.description}</span><br/>
+        </div>
+      </div>
+    `;
+}
   });
   popupContent += `</div>`;
 
