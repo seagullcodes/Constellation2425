@@ -3,10 +3,11 @@
 /***************************************
  * Data Arrays
  ***************************************/
- const it = "#861f18ff";
- const c  = "#d94234ff";
- const m = "#f0a202ff";
+ const it = "#ff1808";
+ const c  = "#ffc800";
+ const m = "#ff0059";
  const co = "#ffffff";
+
  
     const stars = [
      { 
