@@ -18,49 +18,49 @@
        coordinates: { lat: 33.1192, lng: -117.0864 }
        },
        {
-         title: "PF Fulminata",
+         title: "Portfolio Feedback for Team Fulminata",
          description: "Seguin, USA",
          color: it,
          takeaway: "Improving portfolio organization and spacing is key to better showcasing accomplishments in engineering, outreach, and design, which is a mindset we keep in mind through our own portfolio and feedback/advice we share!",
          coordinates: { lat: 29.5688, lng: -97.9647 }
        },
        {
-         title: "PF Cubotics",
+         title: "Portfolio Feedback for Cubotics",
          description: "New Orleans, USA",
          color: it,
          takeaway: "It’s valuable to share advice, such as our signature selective bolding and portfolio formatting, with fellow FTC teams to uplift our competitors and create healthy competition, aligning with FIRST’s core values.",
          coordinates: { lat: 29.9511, lng: -90.0715 }
        },
        {
-         title: "PF Wormgear Warriors",
+         title: "Portfolio Feedback for Wormgear Warriors",
          description: "Edwardsville, USA",
          color: it,
          takeaway: "Helping refine key elements like capitalization and visual organization, not only improves our work in our own portfolio but also fosters collaboration and learning within the FTC community. Adding cohesive visuals, such as more physical robot photo paired with CAD, and reorganizing flowcharts to clearly show processes can create a more engaging and memorable presentation.",
          coordinates: { lat: 38.8114, lng: -89.9532 }
        },
        {
-         title: "PF Tech Tigers",
+         title: "Portfolio Feedback for Tech Tigers",
          description: "Sharon, USA",
          color: it,
          takeaway: "Providing feedback on portfolio aesthetics, photos, and layout emphasized the value of cohesive visuals and thoughtful design in showcasing a team’s identity. Through our reviews, we suggested implementing creative elements like themed shapes, improved spacing, and selective bolding, which not only reminded us of the power of creativity but also allowed us to share that insight with others.",
          coordinates: { lat: 42.1234, lng: -71.1787 }
        },
        {
-         title: "PF Electric Gears",
+         title: "Portfolio Feedback for Electric Gears",
          description: "Torreón, Mexico",
          color: it,
          takeaway: "Reviewing this portfolio reinforced the importance of clear storytelling, cohesive visuals, and thoughtful page organization. By suggesting ways to reduce white space, improve text consistency, and emphasize design processes, we learned how small changes can make a big impact in showcasing an FTC season.",
          coordinates: { lat: 25.5439, lng: -103.4068 }
        },
        {
-         title: "PF Cerebotics",
+         title: "Portfolio Feedback for Cerebotics",
          description: "Torreón, Mexico",
          color: it,
          takeaway: "We provided team-specific feedback on reducing white space, refining wording, and incorporating more diagrams to better showcase their season and accomplishments. Through this process, we reinforced our knowledge on how thoughtful presentation and clear visuals can best highlight the dedication and success behind a team’s efforts to the judges, inspiring us to apply similar improvements to our own work.",
          coordinates: { lat: 25.5439, lng: -103.4068 }
        },
        {
-         title: "PF Operation TAC",
+         title: "Portfolio Feedback for Operation TAC",
          description: "San Juan Capistrano, USA",
          color: it,
          takeaway: "We provided specific feedback on how to fix their wording and effectively use selective bolding. This portfolio was very strong already so by providing feedback on how to improve it we are able to be more detailed and thorough in our own portfolio for this season! ",
@@ -74,7 +74,7 @@
          coordinates: { lat: 34.0522, lng: -118.2437 }
        },
        {
-         title: "PF The Indubitables",
+         title: "Portfolio Feedback for The Indubitables",
          description: "Omaha, USA",
          color: it,
          takeaway: "For this team we gave them feedback around improving the formatting of their pages, lightening up on the text, and adding descriptions to improve clarity. This team however had amazing writing, aesthetic, and storyline in their portfolio which was something major we took away on how we can seamlessly combine these things to create a more cohesive story.",
@@ -88,7 +88,7 @@
          coordinates: { lat: -15.8270, lng: -49.8362 }
        },
        {
-         title: "PF Uzbekistan FIRST Global",
+         title: "Portfolio Feedback for Uzbekistan FIRST Global",
          description: "Tashkent, Uzbekistan",
          color: it,
          takeaway: "This feedback experience emphasized the importance of balancing text with pictures and minimizing white space in the portfolio. Through this we learned that a variety of colors for your font and background helps your text pop more, a piece of advice we continued to give to many other teams.",
@@ -109,7 +109,7 @@
          coordinates: { lat: 34.1443, lng: -118.0019 }
        },
        {
-         title: "PF Superbots",
+         title: "Portfolio Feedback for Superbots",
          description: "Los Angeles, USA",
          color: it,
          takeaway: "We provided feedback on Superbots Portfolio complimenting their formatting and graphics but suggesting that they could maximize their space better on each page. We gave them advice on how to receive industry connections by messaging people on linkedin, an amazing takeaway that we now have the confidence to give valuable advice on how to effectively connect with industry professionals.",
@@ -123,7 +123,7 @@
          coordinates: { lat: 41.8781, lng: -87.6298 }
        },
        {
-         title: "PF North Wind",
+         title: "Portfolio Feedback for North Wind",
          description: "St. Petersburg, Russia",
          color: it,
          takeaway: "We gave this team advice on their page layout, how to minimize blank space by decreasing border size, and emphasizing more of their design process. From this we learned how valuable it is to have a clear design process section of the portfolio to emphasize our design journey and showcase the thought process behind our decisions.",
@@ -403,7 +403,7 @@
          coordinates: { lat: 35.2552, lng: -79.2817 }
        },
        {
-         title: "PF The Occam's Razor Clams",
+         title: "Portfolio Feedback for The Occam's Razor Clams",
          description: "Providence, USA",
          color: it,
          takeaway: "Colorful branding can capture a reader's attention and help them stay engage. The usage of charts, graphs, and other media allows a team to display all sorts of information while maintaing this engagement.",
@@ -459,7 +459,7 @@
          coordinates: { lat: 34.0983, lng: -118.3267 }
        },
        {
-         title: "Spence PF",
+         title: "Portfolio Feedback for Team Spence",
          description: "NYC, USA",
          color: it,
          takeaway: "It’s fun to help out our friends and create lasting mentorship connections with people and teams we’ve interacted with previously.",
@@ -473,14 +473,14 @@
          coordinates: { lat: 33.8303, lng: -116.5453 }
        },
        {
-         title: "49 PF",
+         title: "Portfolio Feedback for Team 49",
          description: "Carson, USA",
          color: it,
          takeaway: "Reviewing a team's portfolio can be an invaluable way to support fellow teams, as this team went on to win Inspire at their ILT! Order for the portfolio can impact the way information is displayed, so being mindful of it can be helpful.",
          coordinates: { lat: 33.8317, lng: -118.2817 }
        },
        {
-         title: "RoboRibits PF",
+         title: "Portfolio Feedback for Team RoboRibits",
          description: "Atlanta, USA",
          color: it,
          takeaway: "Seeing new portfolio formats from other states can be inspirational, and mentoring them to add more specifics into their portfolio can support their success.",
@@ -508,28 +508,28 @@
          coordinates: { lat: 37.4419, lng: -122.1430 }
        },
        {
-         title: "PlumBum PF",
+         title: "Portfolio Feedback for Team PlumBum",
          description: "Vilnius, Lithuania",
          color: it,
          takeaway: " It’s fun to help out our friends and create lasting mentorship connections with people and teams we’ve interacted with previously, and it is also cool to learn about the experience of another girls team from another country.",
          coordinates: { lat: 54.6872, lng: 25.2797 }
        },
        {
-         title: "Kings and Queens PF",
+         title: "Portfolio Feedback for Team Kings and Queens",
          description: "Monrovia, USA",
          color: it,
          takeaway: " Reviewing a team’s portfolio in our own region can be both meaningful and a great way to support other teams. We really enjoy sharing our knowledge, especially when it can support other teams and help them do better in their own competition.",
          coordinates: { lat: 34.1443, lng: -118.0019 }
        },
        {
-         title: "Deadspace PF",
+         title: "Portfolio Feedback for Team Deadspace",
          description: "Monrovia, USA",
          color: it,
          takeaway: "It is fun to help other teams with their portfolio and learn about different ways teams find sponsors and mentors. This team went on to win Think at Wildcard with the help of our advice!",
          coordinates: { lat: 34.1443, lng: -118.0019 }
        },
        {
-         title: "IFC PF",
+         title: "Portfolio Feedback for Team IFC",
          description: "Monrovia, USA",
          color: it,
          takeaway: "It’s interesting to see different team’s approaches to crafting a portfolio, and how they showcase their own unique approaches to creating portfolio feedback.",
@@ -550,14 +550,14 @@
          coordinates: { lat: 34.1443, lng: -118.0019 }
        },
        {
-         title: "Ironwolves PF",
+         title: "Portfolio Feedback for Team Ironwolves",
          description: "Oceanside, USA",
          color: it,
          takeaway: " A balance between mechanism and outreach focused pages contributes to an even portfolio that showcases your season well!",
          coordinates: { lat: 33.1959, lng: -117.3795 }
        },
        {
-         title: "RoboRibits PF (states)",
+         title: "Portfolio Feedback for RoboRibits(State Competion)",
          description: "Atlanta, USA",
          color: it,
          takeaway: "Continuing to connect and provide feedback with a rookie team can continue to propel them through a successful season, as this team we reviewed for their qualifiers and are now reviewing their portfolio for states!",
@@ -578,14 +578,14 @@
          coordinates: { lat: 37.4419, lng: -122.1430 }
        },
        {
-         title: "JavaBots PF",
+         title: "Portfolio Feedback for Team JavaBots",
          description: "Pasadena, USA",
          color: it,
          takeaway: "Supporting a team as they prepare for their next competition can support them, and also show how exhibiting your team personality in your portfolio can lead to success.",
          coordinates: { lat: 34.1478, lng: -118.1445 }
        },
        {
-         title: "Team Leo PF",
+         title: "Portfolio Feedback for Team Leo",
          description: "Roseburg, USA",
          color: it,
          takeaway: "Text clarity is extremely important in exhibiting the process of your season, and checking over text for readability provides a chance to confirm judges understand what you are trying to convey.",
@@ -613,7 +613,7 @@
          coordinates: { lat: 49.2500, lng: -122.5000 }
        },
        {
-         title: "SteamPunks Bravo PF",
+         title: "Portfolio Feedback for SteamPunks Bravo",
          description: "Irvine, USA",
          color: it,
          takeaway: "Using concise sentence structure allows your content to shine even stronger, and consistent kerning between words ensures judge attention is directed exactly where you want it!",
@@ -690,7 +690,7 @@
          coordinates: { lat: 34.0723, lng: -118.3337 } // approximate
        },
        {
-         title: "Intergalactic 8606 PF",
+         title: "Portfolio Feedback for Intergalactic 8606",
          description: "Rancho Santa Fe, USA",
          color: it,
          takeaway: "A color scheme that ensures readability is super important in creating a cohesive portfolio, and a rookie team can accomplish a lot with hard work!",
@@ -971,17 +971,17 @@
  if(event.takeaway){
      popupContent += `
        <div style="border-bottom:1px solid #ccc; margin-bottom:4px; padding-bottom:4px;">
-         <strong style="color: #861f18;">${event.title}</strong><br/>
-         <span style="color: #f0a202;">${event.description}</span><br/>
+       <strong style="color: #861f18; font-size: 18px;">${event.title}</strong>
+         <br><strong style="color: #ed6900; font-size: 16px;">${event.description}</span><br/></strong>
          <button 
-           style="margin-top:4px; background-color:#861f18; color:white; border:none; padding:4px 8px; cursor:pointer; border-radius:4px;"
+           style="margin-top:4px; background-color:#861f18; color:white; border:none; padding:4px 8px; cursor:pointer; border-radius:4px;font-size:14px;"
            onclick="document.getElementById('takeaway-${index}-${i}').style.display = 'block'; this.style.display = 'none';">
            Takeaway
          </button>
          <div 
            id="takeaway-${index}-${i}" 
            class="takeaway" 
-           style="display:none; margin-top:4px; color: #861f18; cursor:pointer;"
+           span style="display:none; margin-top:4px; color: #861f18; cursor:pointer;font-size:16px"
            onclick="closeTakeaway(this)">
            ${event.takeaway}
          </div>
@@ -990,8 +990,8 @@
  }if(!event.takeaway){
    popupContent += `
        <div style="border-bottom:1px solid #ccc; margin-bottom:4px; padding-bottom:4px;">
-         <strong style="color: #861f18;">${event.title}</strong><br/>
-         <span style="color: #f0a202;">${event.description}</span><br/>
+          <strong style="color: #861f18; font-size: 18px;">${event.title}</strong>
+          <br><strong style="color: #ed6900; font-size: 16px;">${event.description}</span><br/></strong>
          </div>
        </div>
      `;
